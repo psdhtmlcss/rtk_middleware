@@ -13,7 +13,7 @@ const addValueButton = document.querySelector('.js-add-value-button');
 
 const store = configureStore({
   reducer: updateStore,
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logIt),
+  middleware: [logIt],
 });
 
 
